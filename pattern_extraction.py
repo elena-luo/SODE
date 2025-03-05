@@ -350,7 +350,7 @@ class AnswerSplitOperator():
     def run(self):
         if self.part == "basic_structure":
             data = []
-            with open("20250209_deepseek_r1_math_26K.jsonl") as f:
+            with open("data/20250209_deepseek_r1_math_26K.jsonl") as f:
                 for line in f.readlines():
                     data.append(json.loads(line))
 
