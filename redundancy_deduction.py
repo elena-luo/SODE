@@ -20,7 +20,7 @@ class simplize_answer:
             for line in f.readlines():
                 line = json.loads(line)
                 data.append(line)
-        fw = open(self.output_file+f"_{status}_need_simplize.json", "w", encoding="utf-8")
+        fw = open(self.output_file+f"_{status}_need_simplize.jsonl", "w", encoding="utf-8")
         for d in data:
             problem = d["prompt"]
             result = d["result"]
@@ -51,7 +51,7 @@ class simplize_answer:
 if __name__ == "__main__":
     
     file_name = "R1_split_part2_filtered"
-    input = "R1_split_part2_filtered_need_filter.json"
+    input = "R1_split_part2_filtered_need_filter.jsonl"
     status = "delete_multi_all"
     status = "delete_multi_1"
     status = "delete_multi_2"
