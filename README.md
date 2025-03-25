@@ -87,7 +87,7 @@ python incorrectness_deduction.py
 ```
 This step will generate a file named `R1_split_part2_ablation_keep_one_global_delete_all_need_simplize.jsonl`
 
-There are more settings in the code, but they do not yield good performace. You could try on your own data if you are interested.
+There are more settings in the code, but they do not yield good performance. You could try on your own data if you are interested.
 
 
 
